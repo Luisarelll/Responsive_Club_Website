@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-style{
+    padding: 2.5rem;
+}
+
+.subcontent-max-width{
+    width: 73.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-title{
+    display: flex;
+} 
+
+.content-title :nth-child(2){
+    color: #eb7136;
+    margin-left: 5px;
+}
+
+
+/** SECTION HERO **/
+.section-hero{
+    height: 52.5rem;
+    background-image: url("./assets/images/hero-image-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: left center;
+}
+
+
+/** SECTION HEADER**/
+.header-mobile{
+    display: none;
+}
+
+.header{
+    max-width: 102.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+.content-menu-nav{
+    width: 43.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-menu-nav h1{
+    color: #fff;
+    text-shadow: 5px 5px 3px #333333;
+}
+
+ul li{
+    display: inline;
+    margin-left: 1.25rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.625rem;
+    padding: 0.625rem 1.25rem ;
+}
+
+li a:hover{
+    border: 0.0625rem solid #ffffff;
+    box-shadow: 3px 3px 5px #333333;
+}
+
+.content-button{
+    display: flex;
+}
+
+.button-style{
+    background: linear-gradient(90deg, rgba(231,135,88,1) 0%, rgba(233,119,61,1) 35%, rgba(236,112,53,1) 100%);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 0.3125rem;
+}
+
+.button-style:hover{
+   color:#fff;
+}
+
+.button-style:active{
+    box-shadow: 0px 0px 0px;  
+}
+
+
+/** SECTION EXERCISES **/
+.section-exercises p{
+    text-align: justify;
+}
+
+.section-cards-mobile{
+    display: none;
+}
+
+.section-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.content-cards{
+    width: 22.916rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-cards h3{
+    margin: 1rem 0;
+}
+
+
+/** SECTION FORM **/
+.content-video video{
+    width: 100%;
+}
+
+.content-form{
+    width: 100%;
+    position: relative;
+    top: -4.375rem;
+}
+
+form{
+    background-color: #eb7136;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+input{
+    border: none;
+}               
+
+input[type=email]{
+    background: none;
+    width: 70%;
+    height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    border-bottom: 0.1875rem solid #d1d1d1;
+}
+
+input[type=email]:focus{
+    outline: none;
+    border-bottom: 0.1875rem  solid #fff;
+    transition: all .2s;
+}
+
+::placeholder{
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+input[type='submit']{
+    background-color:  #fff;
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: #d1d1d1;
+    padding: 1.5rem 3rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    color: #eb7136;
+}
+
+input[type='submit']:focus{
+   color: #eb7136;
+}
+
+
+/** SECTION GALLERY **/
+.content-photographs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.content-photographs img{
+    width: 17.5rem;
+    margin-top: 1rem;
+}
+
+
+/** SECTION MARATHON **/
+.section-marathon{
+    display: flex;
+}
+
+.section-marathon img{
+   width: 50%;
+}
+
+.content-marathon{
+    background-color: #f6f7fb;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-description-marathon{
+    max-width: 31.25rem;
+    min-height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-description-marathon p{
+    text-align: justify;
+}
+
+
+/** SECTION TRAINERS **/
+.section-trainers h3,p{
+    text-align: center;
+}
+
+.content-icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 0 auto;
+}
+
+.icons-style{
+    background-color: #eb7136;
+    min-width: 1.875rem;
+    min-height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons-style:hover{
+    background-color: #e68a5a;
+}
+
+
+/** SECTION FOOTER **/
+.footer{
+    background-color: #f6f7fb;
+    display: flex;
+    justify-content: center;
+}
+
+.content-description-footer{
+    max-width: 37.5rem;
+    min-height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/** MEDIA QUERYS **/
+
+@media only screen and (min-width: 1700px){
+  /** SECTION HERO **/
+  .section-hero{
+    background-position: center 42%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1250px){
+    .subcontent-max-width{
+        max-width: 100%;
+    }
+
+    /** SECTION EXERCISES **/
+    .content-cards{
+        width: 18.916rem;
+    }
+
+    /** SECTION GALLERY **/
+    .content-photographs img{
+    width: 14.65rem;
+    }
+
+    /** SECTION MARATHON **/
+    .content-marathon{
+        padding: 0 1.25rem;
+    }
+
+    /** SECTION TRAINERS **/
+    .content-icons{
+        min-width: 40%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1023px){
+    /** SECTION HERO **/
+    .section-hero{
+        background-image: url('./assets/images/hero-image-tablet.png');
+        background-position: right center;
+        height: 54rem;
+    }
+    
+    
+    /** SECTION HEADER **/
+    .header{
+        display: none;
+    }
+
+    .header-mobile{
+        display: block;
+    }
+
+    .nav-mobile{
+        position: relative;
+        min-height: 4.375rem;
+        background-color: rgba(150, 151, 152, 0.5);
+        overflow: hidden;
+    }
+
+    .nav-mobile h1{
+        position: relative;
+        top: 0.9375rem;
+        color: white;
+        text-shadow: 5px 5px 5px #333;
+    }
+      
+    .nav-mobile #menu-nav-mobile {
+        display: none;
+    }
+
+    #menu-nav-mobile{
+        margin-top: 1.25rem;
+    }
+ 
+    .nav-mobile a{
+        color: #fff;
+        padding: 20px 20px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav-mobile a.icon{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .icon-style{
+        height: 2rem;
+        color:#eb7136;
+    }
+    
+
+    /** SECTION EXERCISES **/
+    .section-cards{
+        display: none;
+    }
+    .section-cards-mobile{
+        display: block;
+    }
+
+    .content-cards-mobile{
+        display: flex;
+        margin-top: 1.25rem;
+    }
+
+    .content-cards-mobile img{
+        height: 10rem;
+    }
+
+    .content-information-cards-mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0.625rem;
+        padding-right: 00.625rem;
+    }
+
+    .content-information-cards-mobile h3{
+        margin-bottom: 0.625rem;
+    }
+
+    /** SECTION FORM **/
+    .content-form{
+        width: 90%;
+    }
+
+    input[type='email']{
+        width: 60%;
+    }
+
+    input[type='submit']{
+        color: #eb7136;
+    }
+
+
+    /** SECTION GALLERY **/
+    .content-photographs img{
+        width: 20rem;
+    }
+
+    
+    /** SECTION MARATHON **/
+    .section-marathon{
+        height: 600px;
+        background-image: url('./assets/images/background-routes-running.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-marathon img{
+        display: none;
+    }
+
+    .content-marathon{
+        max-width: 20.625rem;
+        background-color: rgba(100, 188, 70, 0.8);
+        padding: 1.25rem;
+        border-radius: 0.625rem;
+    }
+
+    .content-description-marathon{
+        align-items: center;
+    }
+
+    .content-description-marathon p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .button-style{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 1rem 4rem;
+    }
+
+
+    /** SECTION TRAINERS **/
+    .content-icons{
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.625rem;
+    }
+
+    .content-icons :nth-child(2){
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 768px){
+    /** SECTION HERO **/
+    .section-hero{
+        height: 43rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px){
+    /** SECTION GALLERY **/
+    .content-photographs img{
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 819px) and (min-width: 650px){
+    /** SECTION FORM **/
+    input[type='email']{
+        width: 50%;
+        font-size: 1.25rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 649px){
+    /** SECTION EXERCISES **/
+    .content-cards-mobile{
+        width: 55%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-cards-mobile img{
+        width: 100%;
+        height: auto;
+    }
+
+    .content-information-cards-mobile{
+        align-items: center;
+    }
+
+    .content-information-cards-mobile h3{
+        text-align: center;
+        margin-top: 0.625rem;
+    }
+
+
+    /** SECTION FORM **/
+    form{
+        flex-direction: column;
+    }
+
+    input[type='email']{
+        width: 70%;
+    }
+
+    ::placeholder{
+        text-align: center;
+    }
+
+    input[type='submit']{
+        margin-top: 1.25rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 570px){
+    .content-title{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 540px){
+    /** SECTION HERO **/
+    .section-hero{
+        height: 35rem;
+        background-image: url('./assets/images/hero-image-mobile.png');
+        background-position: center center;
+    }
+
+
+    /** SECTION EXERCISES **/
+    .content-cards-mobile{
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .content-cards-mobile h3{
+        text-align: left;
+    }
+    
+
+    /** SECTION FORM **/
+    input[type='email']{
+        width: 100%;
+    }
+
+    input[type='submit']{
+        padding: 1rem 3rem;
+    }
+
+
+    /** SECTION GALLERY **/
+    .content-photographs img{
+        width: 8rem;
+    }
+
+
+    /** SECTION MARATHON **/
+    .content-marathon{
+        width: 15.625rem;
+    }
+    
+}
